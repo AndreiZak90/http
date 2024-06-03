@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 95vh;
+}
+
+.link_rek {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #262626;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  a {
+    color: #262626;
+  }
+}
+
+.main_box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn_box {
+  position: relative;
+  margin: 20px;
+  height: 50px;
+}
+
+.add_tikket {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  color: dimgray;
+  border-radius: 12px;
+  cursor: pointer;
+  background: gainsboro;
+}
+
+.add_tikket:hover {
+  border: 1px solid black;
+  color: black;
+}
+
+.tikket_box {
+  margin: 10px auto;
+  max-width: 800px;
+  height: 62px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.tikket_box_max {
+  height: 100%;
+}
+.btn_performance {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.perfomans_img {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.perfomans_img_activ {
+  display: block;
+}
+
+.description_box {
+  cursor: pointer;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.description_lit {
+  margin-top: 11px;
+}
+.description_max {
+  margin-top: 18px;
+}
+.tikket_data {
+  max-width: 140px;
+  margin-top: 11px;
+}
+.tikket_edit {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_img,
+.delete_img {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in;
+}
+.tikket_delete {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tikket_edit:hover,
+.tikket_delete:hover {
+  background: gainsboro;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.add_new_tikket,
+.this_edit_tikket {
+  position: absolute;
+  z-index: 99;
+  right: calc(50% - 225px);
+  top: 100px;
+  background: white;
+  border: 2px dotted black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+}
+
+.textDeleteTikket {
+  max-width: 300px;
+  margin: 30px 0;
+  text-align: left;
+  font-size: 17px;
+}
+
+.newTikket_title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.newTikket_form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description_input {
+  margin-bottom: 10px;
+}
+
+.input_lit_description {
+  margin-bottom: 18px;
+}
+
+.input_buttons {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel_btn,
+.add_form_btn,
+.new_form_btn,
+.del_form_btn {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.cancel_btn:hover {
+  border: 2px solid red;
+  color: red;
+}
+
+.add_form_btn:hover,
+.del_form_btn:hover,
+.new_form_btn:hover {
+  border: 2px solid green;
+  color: green;
+}
+
+.input_lit_description:active,
+.input_max_description:active {
+  border: 1px solid rebeccapurple;
+}
+
